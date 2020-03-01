@@ -1,0 +1,9 @@
+Take out NaNs:
+nan_df = df[df.isna().any(axis=1)]
+display(nan_df.head())
+
+df = df.dropna(how='all')
+df.head()
+
+Encoding: latin-1
+
